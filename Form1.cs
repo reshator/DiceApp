@@ -15,13 +15,10 @@ namespace DicaApp
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
-            var randomDice1 = random.Next(1, 7);
-            var randomDice2 = random.Next(1, 7);
+            var dice1 = Roll(this.dice1);
+            var dice2 = Roll(this.dice2);
 
-            Roll(randomDice1, dice1);
-            Roll(randomDice2, dice2);
-
-            sum = randomDice1 + randomDice2;
+            sum = dice1 + dice2;
 
             sumLabel.Text = "Cумма: " + sum;
             label1.Text = "Предыдущая сумма: " + point;
@@ -51,10 +48,11 @@ namespace DicaApp
 
         }
 
-        private void Roll(int num, PictureBox dice)
+        private int Roll(PictureBox dice)
         {
+            var diceRandom = random.Next(1, 7);
 
-            switch (num)
+            switch (diceRandom)
             {
                 case 1:
                     dice.Image = Image.FromFile("\\dice_images\\dice_1.png");
@@ -74,9 +72,12 @@ namespace DicaApp
                 case 6:
                     dice.Image = Image.FromFile("\\dice_images\\dice_6.png");
                     break;
-                default:
-                    break;
+
             }
+
+            return diceRandom;
+
+
 
         }
 
