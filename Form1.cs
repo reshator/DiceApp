@@ -55,22 +55,22 @@ namespace DicaApp
             switch (diceRandom)
             {
                 case 1:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_1.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_1.png");
                     break;
                 case 2:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_2.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_2.png");
                     break;
                 case 3:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_3.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_3.png");
                     break;
                 case 4:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_4.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_4.png");
                     break;
                 case 5:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_5.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_5.png");
                     break;
                 case 6:
-                    dice.Image = Image.FromFile("\\dice_images\\dice_6.png");
+                    dice.Image = Image.FromFile("..\\..\\..\\dice_images\\dice_6.png");
                     break;
 
             }
